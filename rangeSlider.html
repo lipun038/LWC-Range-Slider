@@ -1,0 +1,20 @@
+<template>
+<div style="border : 1px solid #ffbf00;padding:10px;background-color:#FFFFFF;">
+    <div> 		
+        <b>Min Age :</b> {minRange}	
+    </div>
+    <div>
+        <input type="range" min="1" max="100" value={minRange} 
+            class="slider" id="minRange" name="minRange"
+            onchange={handleInput}
+        />
+        <input type="range" min="1" max="100" value={maxRange} 
+            class="slider" id="maxRange" name="maxRange"
+            onchange={handleInput}
+        />
+    </div>
+    <div style="text-align:right"> 		
+        <b>Max Age :</b> {maxRange}
+    </div>
+</div>    
+</template>
